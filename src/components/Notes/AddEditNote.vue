@@ -5,7 +5,7 @@
                 <div class="control">
                     <textarea 
                         v-model="modelValue"
-                        @input="$emit('update:modelValue', modelValue)"
+                        @input="$emit('update:modelValue', $event.target.value)"
                         class="textarea" 
                         :placeholder="placeholderText" 
                         ref="textareaRef" 
